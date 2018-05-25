@@ -2,11 +2,11 @@ import java.awt.*;
 import java.awt.geom.Rectangle2D;
 import java.util.Random;
 
-public class SquareVector extends Rectangle2D.Double implements FigureVector {
+public class MovingSquare extends Rectangle2D.Double implements FigureVector {
     private float angle;
     public Color color;
 
-    SquareVector() {
+    MovingSquare() {
         Random r = new Random();
         this.width = this.height = r.nextInt(20) + 5;
         this.angle = r.nextFloat() * 360;

@@ -3,8 +3,8 @@ import java.awt.*;
 import java.util.Vector;
 
 public class ContextPanel extends JPanel  {
-    Vector<CircleVector> circles;
-    Vector<SquareVector> squares;
+    Vector<MovingCircle> circles;
+    Vector<MovingSquare> squares;
     private StateDraw stateDraw;
 
     ContextPanel()
@@ -32,11 +32,11 @@ public class ContextPanel extends JPanel  {
     }
 
 //    public void paint(Graphics g) {
-//        for (CircleVector figure : circles)
+//        for (MovingCircle figure : circles)
 //        {
 //            figure.MoveSelf();
 //        }
-//        for (SquareVector figure : squares)
+//        for (MovingSquare figure : squares)
 //        {
 //            figure.MoveSelf();
 //        }
@@ -49,11 +49,11 @@ public class ContextPanel extends JPanel  {
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        for (CircleVector figure : circles)
+        for (MovingCircle figure : circles)
         {
             figure.MoveSelf();
         }
-        for (SquareVector figure : squares)
+        for (MovingSquare figure : squares)
         {
             figure.MoveSelf();
         }

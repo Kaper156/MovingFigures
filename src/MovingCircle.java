@@ -2,12 +2,12 @@ import java.awt.*;
 import java.awt.geom.Ellipse2D;
 import java.util.Random;
 
-public class CircleVector extends Ellipse2D.Double implements FigureVector {
+public class MovingCircle extends Ellipse2D.Double implements FigureVector {
 
     private float angle;
     public Color color;
 
-    CircleVector() {
+    MovingCircle() {
         Random r = new Random();
         this.width = this.height = r.nextInt(20) + 5;
         this.angle = r.nextFloat() * 360;

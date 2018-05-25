@@ -8,7 +8,7 @@ public class StateSquare implements StateDraw {
     }
 
     public void draw(Graphics2D g) {
-        for (SquareVector figure : panel.squares) {
+        for (MovingSquare figure : panel.squares) {
             g.setColor(Color.green);
             g.draw(figure);
             g.setColor(figure.color);
@@ -17,7 +17,7 @@ public class StateSquare implements StateDraw {
     }
 
     public void addFigure() {
-        this.panel.squares.add(new SquareVector());
+        this.panel.squares.add(new MovingSquare());
     }
 
     public void removeFigure() {

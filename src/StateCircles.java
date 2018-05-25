@@ -8,7 +8,7 @@ public class StateCircles implements StateDraw {
     }
 
     public void draw(Graphics2D g) {
-        for (CircleVector figure : panel.circles) {
+        for (MovingCircle figure : panel.circles) {
             g.setColor(Color.yellow);
             g.draw(figure);
             g.setColor(figure.color);
@@ -17,7 +17,7 @@ public class StateCircles implements StateDraw {
     }
 
     public void addFigure() {
-        this.panel.circles.add(new CircleVector());
+        this.panel.circles.add(new MovingCircle());
     }
 
     public void removeFigure() {
