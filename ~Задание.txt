@@ -1,0 +1,21 @@
+Окно с комбобоксом круги\квадраты
+В зависимости от выбора ПОКАЗЫВАЮТСЯ круги\квадраты (но двигаются постоянно)
+имеют физику отскока от краев экрана
+должны быть кнопки "+", "-"
+
+
+
+Смещение под углом
+
+void SetObjDirection(ObjectStock &object, float angle)
+{
+  object.dx = cosf(angle);
+  object.dy = sinf(angle);
+}
+
+void MoveObj(ObjectStock &object)
+{
+  float offset = object.speed*dt; //смещение
+  object.x += offset*object.dx;
+  object.y += offset*object.dy;
+}
