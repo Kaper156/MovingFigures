@@ -1,4 +1,5 @@
 import java.awt.*;
+import java.util.Random;
 
 public class StateSquare implements StateDraw {
     ContextPanel panel;
@@ -8,7 +9,7 @@ public class StateSquare implements StateDraw {
     }
 
     public void draw(Graphics2D g) {
-        for (MovingSquare figure : panel.squares) {
+        for (ExtSquare figure : panel.squares) {
             g.setColor(Color.green);
             g.draw(figure);
             g.setColor(figure.color);
@@ -17,7 +18,19 @@ public class StateSquare implements StateDraw {
     }
 
     public void addFigure() {
-        this.panel.squares.add(new MovingSquare());
+        Random r = new Random();
+        double width, height ;
+        width = height = r.nextInt(20) + 5;
+        double angle = r.nextFloat() * 360;
+        double x = width * 3 + r.nextDouble() * (panel.getWidth() - width * 6);
+        double y = height * 3 + r.nextDouble() * (panel.getHeight() - height * 6);
+        Color color = new Color(r.nextFloat(), r.nextFloat(), r.nextFloat());
+
+        this.panel.squares.add(new ExtSquare(
+                x,y, width, height,
+                angle, color
+        ));
+
     }
 
     public void removeFigure() {

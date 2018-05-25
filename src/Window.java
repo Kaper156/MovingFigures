@@ -16,7 +16,7 @@ public class Window extends JFrame {
 
         // Size
 //        setPreferredSize(new Dimension(700, 500));
-        setResizable(false); // Дабы не обсчитывать динамическое изменение окна
+//        setResizable(false); // Дабы не обсчитывать динамическое изменение окна
 
         //Conatiner
         Container container = getContentPane(); // Контейнер для эелментов окна
@@ -25,7 +25,7 @@ public class Window extends JFrame {
         // CANVAS
         canvas = new ContextPanel();
         canvas.setPreferredSize(new Dimension(700,400));
-        container.add(canvas, BorderLayout.SOUTH);
+
 
         //Timer
         timer = new Timer(100, new ActionListener() {
@@ -100,9 +100,10 @@ public class Window extends JFrame {
         cmdPanel.add(btnTimerStop);
 
         container.add(cmdPanel, BorderLayout.NORTH);
+        container.add(canvas, BorderLayout.CENTER);
+
         // Показывай круги
         cmbMod.setSelectedIndex(1);
-
 
         this.setVisible(true);
     }

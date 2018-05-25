@@ -1,4 +1,5 @@
 import java.awt.*;
+import java.util.Random;
 
 public class StateCircles implements StateDraw {
     ContextPanel panel;
@@ -8,7 +9,7 @@ public class StateCircles implements StateDraw {
     }
 
     public void draw(Graphics2D g) {
-        for (MovingCircle figure : panel.circles) {
+        for (ExtCircle figure : panel.circles) {
             g.setColor(Color.yellow);
             g.draw(figure);
             g.setColor(figure.color);
@@ -17,7 +18,18 @@ public class StateCircles implements StateDraw {
     }
 
     public void addFigure() {
-        this.panel.circles.add(new MovingCircle());
+        Random r = new Random();
+        double width, height ;
+        width = height = r.nextInt(20) + 5;
+        double angle = r.nextFloat() * 360;
+        double x = width * 3 + r.nextDouble() * (panel.getWidth() - width * 6);
+        double y = height * 3 + r.nextDouble() * (panel.getHeight() - height * 6);
+        Color color = new Color(r.nextFloat(), r.nextFloat(), r.nextFloat());
+
+        this.panel.circles.add(new ExtCircle(
+                x,y, width, height,
+                angle, color
+        ));
     }
 
     public void removeFigure() {
