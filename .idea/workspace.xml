@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cffe831-0724-4ffd-bddc-4223e103322a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/CircleVector.java" afterPath="$PROJECT_DIR$/src/MovingCircle.java" />
-      <change beforePath="$PROJECT_DIR$/src/ContextPanel.java" afterPath="$PROJECT_DIR$/src/ContextPanel.java" />
-      <change beforePath="$PROJECT_DIR$/src/SquareVector.java" afterPath="$PROJECT_DIR$/src/MovingSquare.java" />
-      <change beforePath="$PROJECT_DIR$/src/StateCircles.java" afterPath="$PROJECT_DIR$/src/StateCircles.java" />
-      <change beforePath="$PROJECT_DIR$/src/StateSquare.java" afterPath="$PROJECT_DIR$/src/StateSquare.java" />
+      <change beforePath="$PROJECT_DIR$/src/FigureVector.java" afterPath="$PROJECT_DIR$/src/MovingFigure.java" />
+      <change beforePath="$PROJECT_DIR$/src/MovingCircle.java" afterPath="$PROJECT_DIR$/src/MovingCircle.java" />
+      <change beforePath="$PROJECT_DIR$/src/MovingSquare.java" afterPath="$PROJECT_DIR$/src/MovingSquare.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,7 +20,7 @@
         <entry file="file://$PROJECT_DIR$/src/MovingCircle.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+              <caret line="4" column="74" lean-forward="false" selection-start-line="4" selection-start-column="74" selection-end-line="4" selection-end-column="74" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,8 +78,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FigureVector.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FigureVector.java">
+      <file leaf-file-name="MovingFigure.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MovingFigure.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -399,7 +396,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FigureVector.java">
+    <entry file="file://$PROJECT_DIR$/src/MovingFigure.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -486,7 +483,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FigureVector.java">
+    <entry file="file://$PROJECT_DIR$/src/MovingFigure.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
@@ -712,7 +709,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FigureVector.java">
+    <entry file="file://$PROJECT_DIR$/src/MovingFigure.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -757,7 +754,7 @@
     <entry file="file://$PROJECT_DIR$/src/MovingCircle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+          <caret line="4" column="74" lean-forward="false" selection-start-line="4" selection-start-column="74" selection-end-line="4" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

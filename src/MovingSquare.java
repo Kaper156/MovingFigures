@@ -2,7 +2,7 @@ import java.awt.*;
 import java.awt.geom.Rectangle2D;
 import java.util.Random;
 
-public class MovingSquare extends Rectangle2D.Double implements FigureVector {
+public class MovingSquare extends Rectangle2D.Double implements MovingFigure {
     private float angle;
     public Color color;
 

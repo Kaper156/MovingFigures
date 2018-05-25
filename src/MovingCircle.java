@@ -2,7 +2,7 @@ import java.awt.*;
 import java.awt.geom.Ellipse2D;
 import java.util.Random;
 
-public class MovingCircle extends Ellipse2D.Double implements FigureVector {
+public class MovingCircle extends Ellipse2D.Double implements MovingFigure {
 
     private float angle;
     public Color color;
