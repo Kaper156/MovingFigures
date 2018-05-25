@@ -24,7 +24,4 @@ public class StateCircles implements StateDraw {
         if (!panel.circles.isEmpty())
             panel.circles.remove(panel.circles.lastElement());
     }
-
-
-
 }
